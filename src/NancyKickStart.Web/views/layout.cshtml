@@ -1,0 +1,25 @@
+﻿@using Nancy
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <script type="text/javascript" src="@Url.Content("~/content/kickstart/js/prettify.js")"></script>                    
+        <script type="text/javascript" src="@Url.Content("~/content/kickstart/js/kickstart.js")"></script>
+        <link href='http://fonts.googleapis.com/css?family=Signika:400,300' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="@Url.Content("~/content/css/reset.css")" media="all"/>
+        <link rel="stylesheet" type="text/css" href="@Url.Content("~/content/kickstart/css/kickstart.css")" media="all"/>
+        <link rel="stylesheet" type="text/css" href="@Url.Content("~/content/css/style.css")" media="all" />  
+
+    </head>
+    <body>
+        
+        @RenderBody()
+        <div class="panel col_12">
+            <span class="icon darkgray small" data-icon="t"></span> @DateTime.Now
+        </div>
+  
+    </body>
+</html>
